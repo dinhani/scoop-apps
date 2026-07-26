@@ -1,0 +1,41 @@
+{
+    "version": "3.14.6",
+    "description": "CPython free-threaded build (no GIL) from the official NuGet package.",
+    "homepage": "https://www.python.org/",
+    "license": "Python-2.0",
+    "notes": [
+        "Shims: python314t / python3.14t / pythont (does not shadow scoop's python).",
+        "Install packages with: python314t -m pip install ...",
+        "Check GIL: python314t -c \"import sys; print(sys._is_gil_enabled())\"  # False = disabled"
+    ],
+    "url": "https://api.nuget.org/v3-flatcontainer/python-freethreaded/3.14.6/python-freethreaded.3.14.6.nupkg",
+    "hash": "349e2e7fa2279437c821833baa8c937a7ef9e82c1cbca7ee2b4a9324ca68d2b5",
+    "extract_dir": "tools",
+    "bin": [
+        [
+            "python.exe",
+            "python314t"
+        ],
+        [
+            "python.exe",
+            "python3.14t"
+        ],
+        [
+            "python.exe",
+            "pythont"
+        ],
+        [
+            "pythonw.exe",
+            "pythonw314t"
+        ]
+    ],
+    "persist": "Lib\\site-packages",
+    "checkver": {
+        "url": "https://api.nuget.org/v3-flatcontainer/python-freethreaded/index.json",
+        "regex": "\"([\\d.]+)\"",
+        "reverse": true
+    },
+    "autoupdate": {
+        "url": "https://api.nuget.org/v3-flatcontainer/python-freethreaded/$version/python-freethreaded.$version.nupkg"
+    }
+}
