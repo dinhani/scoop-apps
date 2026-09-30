@@ -1,5 +1,5 @@
 {
-    "version": "3.14.7",
+    "version": "3.14.8",
     "description": "CPython free-threaded build (no GIL) from the official NuGet package.",
     "homepage": "https://www.python.org/",
     "license": "Python-2.0",
@@ -8,8 +8,8 @@
         "Install packages with: python314t -m pip install ...",
         "Check GIL: python314t -c \"import sys; print(sys._is_gil_enabled())\"  # False = disabled"
     ],
-    "url": "https://api.nuget.org/v3-flatcontainer/python-freethreaded/3.14.7/python-freethreaded.3.14.7.nupkg",
-    "hash": "46b9421a69f36259e56b6375376208320b5701647ec1d158d8936b46be7d38ee",
+    "url": "https://api.nuget.org/v3-flatcontainer/python-freethreaded/3.14.8/python-freethreaded.3.14.8.nupkg",
+    "hash": "f483be2eece8e14910dcde98e106700b539aba36ed9d0d4f4501e1bdb1e71f61",
     "extract_dir": "tools",
     "bin": [
         [
