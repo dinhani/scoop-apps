@@ -1,0 +1,28 @@
+{
+    "version": "1068-fc350be",
+    "description": "Diffusion model inference in pure C/C++ (CUDA 12 version). Needs CUDA 12 runtime DLLs on PATH (cuda12.9).",
+    "homepage": "https://github.com/leejet/stable-diffusion.cpp",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-1068-fc350be/sd-master-fc350be-bin-win-cuda12-x64.zip",
+            "hash": "529a7c6436436b61ab9b10cabb930958476086168fc5c7d72d5eba66734ac378"
+        }
+    },
+    "bin": [
+        "sd-cli.exe",
+        "sd-server.exe"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/leejet/stable-diffusion.cpp/releases/latest",
+        "regex": "\"tag_name\":\\s*\"master-(?<build>\\d+)-(?<commit>[0-9a-f]+)\"",
+        "replace": "${build}-${commit}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-$version/sd-master-$matchCommit-bin-win-cuda12-x64.zip"
+            }
+        }
+    }
+}
