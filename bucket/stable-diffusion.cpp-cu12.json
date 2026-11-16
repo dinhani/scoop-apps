@@ -1,12 +1,12 @@
 {
-    "version": "1104-5dcfa79",
+    "version": "1106-532d2c1",
     "description": "Diffusion model inference in pure C/C++ (CUDA 12 version). Needs CUDA 12 runtime DLLs on PATH (cuda12.9).",
     "homepage": "https://github.com/leejet/stable-diffusion.cpp",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-1104-5dcfa79/sd-master-5dcfa79-bin-win-cuda12-x64.zip",
-            "hash": "c7132d6f7e36dee6c39d3d51e8970470c615e5c9c8db498d6f73d5c14b4b1f5d"
+            "url": "https://github.com/leejet/stable-diffusion.cpp/releases/download/master-1106-532d2c1/sd-master-532d2c1-bin-win-cuda12-x64.zip",
+            "hash": "b087219145a382cc1b1e826318289e1f672b9bb6965977734ef0deb85fe2d03a"
         }
     },
     "bin": [
